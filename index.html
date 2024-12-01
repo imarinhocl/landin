@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Vídeo</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        video {
+            width: 80%; /* 80% da largura da tela */
+            max-width: 720px; /* Limita a largura máxima a 720px */
+            height: auto; /* Mantém a proporção do vídeo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+            border-radius: 8px; /* Bordas levemente arredondadas */
+        }
+    </style>
+</head>
+<body>
+    <video id="videoPlayer" controls autoplay>
+        <source src="h/Users/igormarinho/Documents/HTML/Aula 01/assets/teste.mp4 " type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <script>
+        const video = document.getElementById('videoPlayer');
+        video.onended = function() {
+            window.location.href = "https://s.shopee.com.br/4ffRJeuavU"; // Substitua pelo link do seu produto
+        };
+    </script>
+</body>
+</html>
+
+
